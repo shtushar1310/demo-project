@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Tecnolusion Analytics</title>
+    <link rel="shortcut icon" href="./assest/Logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+     <link rel="stylesheet" href="update.css".css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <!-- navigation bar -->
+
+    <nav class="navbar" >
+      <div class="logo">
+        <img src="./assest/Logo.png" alt="img-logo" class="img-logo" />
+      </div>
+      <div class="menu-icon" onclick="addClass()">☰</div>
+       
+
+       <!-- <div class="menu-close" onclick="closeClass()">&times</div>  -->
+      <div class="links tab">
+        <a href="#" class="active" >Home</a>
+        <a href="#" class="active"  onclick="goToSection('about')">About</a>
+        <a href="#" class="active" onclick="goToSection('project')">Projects</a>
+        <a href="#" class="active" onclick="goToSection('contact')">Contact Us</a>
+        <a href="Form.html" target="_blank" class="active">Career</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section" >
+      <div class="hero-content">
+        <div class="wrapper">
+          <h4 class="heading-hero">
+            Tecnolusion Analytics | Transforming Data into Insightful Solutions
+          </h4>
+          <p class="para-hero">
+            At Tecnolusion Analytics, you’ll work with a team that’s shaping
+            the future of data engineering & analytics. We offer a dynamic work
+            environment, exciting challenges, and endless learning
+            opportunities.
+          </p>
+          <button class="btn-hero" onclick="goToSection('about')">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+
+    <div class="project-section" id="project">
+      <div class="project-heading">
+        <h2>OUR PROJECT</h2>
+      </div>
+
+      <div class="project">
+        <div class="project-1">
+          <div class="inner-container">
+            <h3>DATA MINING</h3>
+            <img src="./assest/codeSpace1.jpg" alt="" class="img-project" />
+            <p>A data project at Tecnolusion Analytics involves the structured process of collecting, transforming, analyzing, and visualizing data to solve business problems and deliver actionable insights.</p>
+          </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>DATA WAREHOUSING</h3>
+                <img src="./assest/fred.jpg" alt="" class="img-project" />
+                <p><i>At Tecnolusion Analytics, we implemented a Data Warehousing Project to address the challenge of fragmented and inconsistent data across multiple systems for one of our clients. The client struggled with slow reporting, unreliable insights, and duplicated data sources</i></p>
+              </div>
+
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3> DATA INTERGITY</h3>
+                <img src="./assest/Security.jpg" alt="" class="img-project" />
+                <p>A healthcare analytics firm needed to comply with strict data privacy regulations (HIPAA/GDPR) while handling sensitive patient data.</p>
+                <li>Implemented end-to-end data encryption and secure authentication</li>
+                <li>Ensured data pipelines met regulatory standard</li>
+                
+              </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>HEALTH CARE</h3>
+                <img src="./assest/Health.jpg" alt="" class="img-project" />
+                <p>At Tecnolusion Analytics, we build robust, scalable, and secure data infrastructures that empower healthcare providers to make faster, smarter, and safer decisions.
+
+                  “Transforming Healthcare Data into Life-Saving Solutions.”</p>
+              </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>MACHINE AND AI</h3>
+                <img src="./assest/ai.jpg" alt="" class="img-project" />
+                <p>At Tecnolusion Analytics, we empower businesses to harness the full potential of Machine Learning (ML) and Artificial Intelligence (AI) by delivering data-driven solutions that are intelligent, scalable, and impactful.</p>
+              </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>DATA LAKE</h3>
+                <img src="./assest/all.jpg" alt="" class="img-project" />
+                <p>At Tecnolusion Analytics, we help organizations build and manage modern Data Lake architectures that store vast amounts of raw and processed data in one scalable, secure environment — empowering real-time analytics, AI, and decision-making</p>
+              </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>SNOWFLAKE SCHEMA</h3>
+                <img src="./assest/edit.jpg" alt="" class="img-project" />
+                <p>The Snowflake Schema is a type of data warehouse schema that organizes data into fact and dimension tables, with dimension tables normalized into multiple related table <i>Technolusion Analytics – Structuring Data for Scalable Intelligence</i></p>
+              </div>
+        </div>
+        <div class="project-1">
+            <div class="inner-container">
+                <h3>FINCOP SECTOR</h3>
+                <img src="./assest/RENAME.jpg" alt="" class="img-project" />
+                <p>The FinCorp sector (Financial and Corporate) relies heavily on data-driven decision-making, risk management, and regulatory compliance. At Tecnolusion Analytics, we empower FinCorp companies with modern data, AI, and analytics solutions to stay competitive and agile in today’s financial landscape</p>
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- section about us  -->
+
+<section id="about" class="about">
+  <div class="section-content">
+    <h1>About Us</h1>
+    <p><b>Welcome to Tecnolusion Analytics, where data meets destiny. Founded on the belief that insights unlock infinite possibilities, we are a trailblazing analytics firm dedicated to revolutionizing how businesses harness the power of data. Our mission is simple yet profound: to transform raw information into strategic brilliance that drives growth, innovation, and lasting success.
+
+      At Tecnolusion, we don’t just analyze data—we redefine what’s possible. Our team of world-class data scientists, engineers, and industry experts brings together cutting-edge technologies like AI, machine learning, and predictive modeling with a deep understanding of business dynamics. From startups to global enterprises, we partner with organizations across industries to uncover hidden opportunities, streamline operations, and shape a future where decisions are precise, impactful, and forward-thinking.
+      
+      What sets us apart? It’s our relentless pursuit of excellence and our commitment to tailored solutions. We believe every dataset tells a unique story, and we craft bespoke analytics strategies that align with your vision. Whether it’s optimizing supply chains, enhancing customer experiences, or forecasting market trends, we deliver results that don’t just meet expectations—they exceed them.
+      
+      Headquartered at the intersection of innovation and ambition, Tecnolusion Analytics is more than a company—it’s a movement. We’re here to empower businesses to not only navigate the complexities of today’s data-driven landscape but to lead it. Join us on this journey, and let’s turn insights into action, together.</b></p>
+  </div>
+</section>
+
+
+
+
+<!-- contact us  -->
+
+
+
+
+<section id="contact">
+  <div class="section-content">
+    <h1>Contact Us</h1>
+    <p>Email: contact@technolusion.com</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<div class="Footer">
+    <div class="footer-content">
+        <div class="social-media">
+            <img src="./assest/linkedin-brands.svg" alt="" class="img-footer">
+            <img src="./assest/x-twitter-brands.svg" alt="" class="img-footer">
+            <img src="./assest/instagram-brands.svg" alt="" class="img-footer">
+            <img src="./assest/facebook-brands.svg" alt="" class="img-footer">
+        </div>
+        <div class="copyright">
+            <h3>Technolusion Analytics</h3>
+        <p>Copyright &copy; 2023 Technolusion Analytics</p>
+        </div>
+        
+
+    </div>
+</div>
+
+
+
+<script src="main.js"></script>
+  </body>
+</html>

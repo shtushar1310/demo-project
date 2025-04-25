@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Tecnolusion Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/assest/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">How can we help you?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+      <p>Thank you! Your message has been received. 😊</p>
+      <div class="thank-you-buttons">
+        <button onclick="goBackToForm()">Go Back to Form</button>
+        <button onclick="goToHome()">Go to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="firebaseAuth.js" ></script>
+
+ 
+</body>
+</html>

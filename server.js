@@ -4,9 +4,7 @@ const path = require('path');
 const mongoose=require('mongoose')
 require('dotenv').config();
 app.use(cors());
-app.use(cors({
-  origin: process.env.FRONTEND
-}));
+
 
 app.use(express.json());
 

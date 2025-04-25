@@ -57,8 +57,8 @@ form.addEventListener("submit", async function (e) {
   const description = document.getElementById("message").value;
 
   try {
-    const res = await fetch("https://enchanting-custard-ace770.netlify.app/api/users", {
-      // <-- must be an HTTP endpoint, not MongoDB URI
+    const res = await fetch("http://localhost:3000/api/users", {
+      // <-- must be an HTTP endpoint, not MongoDB URIgit
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ firstName, lastName, Email, description }),

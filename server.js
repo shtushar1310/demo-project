@@ -9,6 +9,16 @@ app.use(cors());
 
 app.use(express.json());
 
+
+
+
+const corsOptions = {
+  origin: "https://enchanting-custard-ace770.netlify.app/", // Your Netlify frontend URL
+};
+
+app.use(cors(corsOptions));
+
+
 // Serve static frontend files
 // app.use(express.static(path.join(__dirname, '../public'))); 
 

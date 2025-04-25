@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose=require('mongoose')
+require('dotenv').config();
 
 app.use(express.json());
 
@@ -9,7 +10,8 @@ app.use(express.json());
 // app.use(express.static(path.join(__dirname, '../public'))); 
 
 
-const mongoURI ='mongodb://localhost:27017/myDatabase' ; // or Atlas URI
+// const mongoURI ='mongodb://localhost:27017/myDatabase' ; // or Atlas URI
+const mongoURI=process.env.DB_URL
 
 
 mongoose.connect(mongoURI, {
@@ -69,6 +71,8 @@ app.post('/api/users', async (req, res) => {
 app.get('/api/hello', (req, res) => {
   res.json({ message: "Hello from backend!" });
 });
+
+//this is comment for new purpose
 
 // Start server
 const PORT = process.env.PORT || 3000;

@@ -57,7 +57,7 @@ form.addEventListener("submit", async function (e) {
   const description = document.getElementById("message").value;
 
   try {
-    const res = await fetch("https://tecnolusion-analytics-website.onrender.com/api/users", {
+    const res = await fetch("/api/users", {
       // <-- must be an HTTP endpoint, not MongoDB URI
       method: "POST",
       headers: { "Content-Type": "application/json" },

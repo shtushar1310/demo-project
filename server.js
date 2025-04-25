@@ -53,7 +53,7 @@ app.get('/',(req,res)=>{
 //     res.status(400).json({ error: err.message });
 //   }
 // });
-app.post('https://tecnolusion-analytics-website.onrender.com/api/users', async (req, res) => {
+app.post('https://enchanting-custard-ace770.netlify.app//api/users', async (req, res) => {
   try {
     const user = new data(req.body);
     console.log(req.body);

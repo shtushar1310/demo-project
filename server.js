@@ -50,9 +50,9 @@ app.use(express.static('public'))
 
 
 
-app.get('/',(req,res)=>{
-    res.json("we are at home page")
-})
+// app.get('/',(req,res)=>{
+//     res.json("we are at home page")
+// })
 
 
 // app.post('/api/users', async (req, res) => {
@@ -81,9 +81,9 @@ app.post('/api/users', async (req, res) => {
 
 
 // Example API route
-app.get('/api/hello', (req, res) => {
-  res.json({ message: "Hello from backend!" });
-});
+// app.get('/api/hello', (req, res) => {
+//   res.json({ message: "Hello from backend!" });
+// });
 
 //this is comment for new purpose
 

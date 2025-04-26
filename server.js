@@ -39,8 +39,8 @@ const schema=mongoose.Schema;
 const dataSchema=new schema({
   firstName:String,
   lastName:String,
-  Email:String,
-  description:String
+  email:String,
+  message:String
 })
 
 const data=mongoose.model('data',dataSchema)
